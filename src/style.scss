@@ -1,3 +1,18 @@
-.div{
-  box-shadow: black;
+@import "variables";
+
+.wrapper{
+  width: 800px;
+  height: 600px;
+  border:1px solid black;
+
+}
+p{
+  font-size: 24px;
+}
+.effect-box{
+  width: 100%;
+  position: relative;
+  height: 100%;
+  transition: 2s ease-in-out;
+
 }

@@ -6,4 +6,9 @@ html(lang='en')
         meta(http-equiv='X-UA-Compatible', content='ie=edge')
         title Document
     body
-        p hello
+        div.wrapper
+            div.effect-box
+                - for(let i = 0; i<=22;i++){
+                 div(class=`t${i} t`)
+                - }
+            p point at me
