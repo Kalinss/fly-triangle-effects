@@ -1,18 +1,22 @@
-@import "variables";
+@import "reset";
+@import "forCss";
 
 .wrapper{
   width: 800px;
   height: 600px;
   border:1px solid black;
-
+  margin-bottom: 100px;
 }
 p{
   font-size: 24px;
 }
-.effect-box{
+.effect-box-css{
   width: 100%;
   position: relative;
   height: 100%;
-  transition: 2s ease-in-out;
-
+  transition: 2s ease;
+}
+#canvas{
+  width: 800px;
+  height: 600px;
 }

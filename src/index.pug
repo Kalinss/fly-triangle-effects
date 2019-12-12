@@ -7,8 +7,11 @@ html(lang='en')
         title Document
     body
         div.wrapper
-            div.effect-box
+            div.effect-box-css
                 - for(let i = 0; i<=22;i++){
                  div(class=`t${i} t`)
                 - }
-            p point at me
+            p point at me.(css+svg (60-30fps))
+        div.wrapper
+            canvas#canvas(width='800' height='600')
+            p click me. (canvas(~60fps))

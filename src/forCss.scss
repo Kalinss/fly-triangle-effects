@@ -63,12 +63,12 @@ $color:43;
 
   }
 }
-.effect-box:hover{
+.effect-box-css:hover{
   @for $i from 1 through 22 {
     .t#{$i}{
       clip-path: nth($HIsvg2,$i);
       background-color: hsl(43+$i, 92%, 42%);
-      transition: 2s ease-in-out;
+      transition: 2s ease;
       filter: hue-rotate(90deg);
       animation: colorAnim#{$i};
       animation-duration: 5s;
@@ -89,3 +89,4 @@ $color:43;
   }
 }
 
+// very expensive animation, if you do it through css, eat up to 30 fps
